@@ -1,6 +1,6 @@
 # 🚗 Vehicle Detection & Counting with OpenCV
 
-![Vehicle Detection](https://img.shields.io/badge/OpenCV-Python-blue?logo=opencv) ![Python](https://img.shields.io/badge/Python-3.10-green?logo=python)
+![OpenCV + Python](https://img.shields.io/badge/OpenCV-Python%203.13-blue?logo=opencv)
 
 A **real-time vehicle detection and counting system** using OpenCV. This project tracks vehicles across multiple lanes, highlights anomalous vehicles, and visualizes traffic flow in videos with clear overlays. Perfect for **traffic analysis, AI experimentation, and computer vision learning**.
 
@@ -20,12 +20,12 @@ A **real-time vehicle detection and counting system** using OpenCV. This project
 
 **Example usage**:
 
-![Vehicle Detection Demo](https://user-images.githubusercontent.com/placeholder/demo.gif)
+![Vehicle Detection Demo](demo_video.gif)
 
 * Blue, green, yellow lanes count vehicles separately
 * Red boxes indicate anomalous or special vehicles
 * Overlay polygons highlight areas of interest
-
+  
 ---
 
 ## ⚙️ Installation
@@ -37,26 +37,38 @@ git clone https://github.com/YOUR_USERNAME/vehicle-detection.git
 cd vehicle-detection
 ```
 
-2. Install required Python packages:
+2. Create a virtual environment (optional but recommended):
+
+```bash
+python -m venv vehicle-env
+vehicle-env\Scripts\activate      # Windows
+source vehicle-env/bin/activate   # macOS/Linux
+```
+
+3. Install required Python packages:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Make sure you have a test video (e.g., `traffic_video.mp4`) in the repo folder.
+4. Make sure you have a test video (e.g., `traffic_video.mp4`) in the repo folder.
 
 ---
 
 ## 🛠 Usage
 
-Run the main detection script:
+Open the Jupyter Notebook `vehicle_detection.ipynb`:
+
+1. Start Jupyter Notebook:
 
 ```bash
-python vehicle_detection.py
+jupyter notebook
 ```
 
-* The script will read the video, detect and track vehicles, and display real-time counts on screen.
-* Press **Esc** to exit the video window.
+2. In the browser, navigate to `vehicle_detection.ipynb` and open it.
+3. Run the notebook cells **in order**:
+
+* The video will be read, vehicles will be detected and tracked, and counts for each lane will be displayed.
 
 ---
 
@@ -68,6 +80,7 @@ computer-vision-detection/
 ├─ vehicle_detection.py    # Main detection script
 ├─ vehicle.py              # Vehicle class for tracking
 ├─ traffic_video.mp4       # Sample video (small resolution recommended)
+├─ demo_video.gif          # Tracking demo
 ├─ requirements.txt        # Dependencies
 └─ README.md
 ```
