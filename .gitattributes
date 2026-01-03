@@ -1,0 +1,10 @@
+# Force Python language for Jupyter notebooks
+*.ipynb linguist-language=Python
+
+# Force Python language for Python scripts
+*.py linguist-language=Python
+
+# Ignore media files and text files not part of code
+*.gif linguist-vendored
+*.mp4 linguist-vendored
+*.txt linguist-vendored
